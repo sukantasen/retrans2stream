@@ -28,7 +28,7 @@ docker exec -i $dockername \
     --target /mt/trg/$(basename $2) \
     --waitk 3 \
     --bpe_code /mt/model/spm.32000.en-de.model \
-    --output /mt/out/base.k$k
+    --output /mt/out/base.waitk3
 
 echo "Stopping the docker..."
 docker stop $dockername
